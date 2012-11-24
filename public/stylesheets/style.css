@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+.submit {
+    background: none repeat scroll 0 0 lightblue;
+    border-radius: 15px 15px 15px 15px;
+    display: block;
+    margin: 10px auto;
+}
+
+.book_name {
+    border: 3px solid;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    width: 300px;
+}
