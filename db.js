@@ -9,4 +9,6 @@ var book = new Schema({
 });
 
 db.model('book', book);
-db.connect('mongodb://localhost/express-book');
+db.connect('mongodb://localhost/book', function(err) {
+        if (err) throw err;
+        });

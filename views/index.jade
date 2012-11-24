@@ -4,7 +4,7 @@ block content
   h1= title
   p A book recommendation and discovery engine
   div#book_input
-      form(name="book_input", action="/results", method="post", class="recommend_form")
-      p Give the name of the books you've read to discover new ones
-      input(name="book", placeholder="Enter book name", id="book_name1", class="book_name")
-      input(type="submit", value="Get me recommendations", class="submit")
+      form(name="book_input", action="/result", method="post", class="recommend_form")
+          p Give the name of the books you've read to discover new ones
+          input(name="book", placeholder="Enter book name", id="book_name1", class="book_name")
+          input(type="submit", value="Get me recommendations", class="submit")

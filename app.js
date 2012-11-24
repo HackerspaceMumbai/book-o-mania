@@ -28,6 +28,7 @@ app.configure('development', function(){
 var routes = require('./routes')
 
 app.get('/', routes.index);
+app.post('/result', routes.result);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
