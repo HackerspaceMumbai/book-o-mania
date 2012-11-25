@@ -1,6 +1,9 @@
 block content
   each result in results
       div.result
-          <section>
-          h1.result_name= result.name
-          h3.result_genre= result.genre
+          section
+              h1(id=result.id).result_name= result.name
+              h3.result_genre= result.genre
+          div.vote
+                span(id=result.id).upvote Vote Up
+                span(id=result.id).downvote Vote Down

@@ -63,8 +63,31 @@ header {
     border-radius: 10px;
 }
 
-.result_name {
+.result > section {
+    display: inline-block;
+    width: 80%;
 }
 
-.result_genre {
+.vote {
+    display: inline-block;
+    width: 15%;
+    min-width: 160px;
+}
+
+.vote span {
+    margin: 0 3px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.upvote {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.downvote {
+    background-color: red;
+    cursor: pointer;
 }
