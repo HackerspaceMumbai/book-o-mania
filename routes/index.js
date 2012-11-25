@@ -18,7 +18,7 @@ exports.result = function(req, res) {
         keywords = result.keywords;
         rating = result.rating;
         book.find({ name: { $ne: name}, $or :  [{genre: genre}, {rating: rating}]}, function(err, results) {
-            res.render('result', {results: results, title: "Book-O-Mania"});
+            res.render('result', {results: results});
         });
     });
 };

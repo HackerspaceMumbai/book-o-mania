@@ -1,17 +1,44 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100%;
+  margin: 0px;
 }
 
 a {
   color: #00B7FF;
 }
 
+header {
+    background-image: -moz-linear-gradient(top, #AAA 50%, #CCC 90%);
+    background-image: -webkit-linear-gradient(top, #AAA 50%, #CCC 90%);
+    background-image: -o-linear-gradient(top, #AAA 50%, #CCC 90%)
+    background-image: -ms-linear-gradient(top, #AAA 50%, #CCC 90%)
+    background-image: linear-gradient(top, #AAA 50%, #CCC 90%);
+    padding: 30px;
+}
+
+.recommend_form {
+    margin-top: 100px;
+}
+
+.recommend_form > p {
+    text-align: center;
+}
+
 .submit {
-    background: none repeat scroll 0 0 lightblue;
+    background: none repeat scroll 0 0 #80A9DA;
     border-radius: 15px 15px 15px 15px;
     display: block;
     margin: 10px auto;
+    padding: 5px;
+}
+
+.submit:hover {
+    box-shadow: 1px 1px 2px rgba(255,255,255,0.8) inset;
+}
+
+.submit:active {
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4) inset;
 }
 
 .book_name {
@@ -19,11 +46,25 @@ a {
     display: block;
     height: 30px;
     margin: 0 auto;
-    width: 300px;
+    min-width: 300px;
+    width: 30%;
+}
+
+#book_result {
+    margin-top: 50px;
 }
 
 .result {
     border: 1px solid;
     margin: 10px;
     padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.result_name {
+}
+
+.result_genre {
 }

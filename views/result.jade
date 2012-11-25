@@ -1,8 +1,6 @@
-extends layout
-
 block content
-  div#book_result
-      each result in results
-          div.result
-              p#result_name= result.name
-              p#result_genre= result.genre
+  each result in results
+      div.result
+          <section>
+          h1.result_name= result.name
+          h3.result_genre= result.genre
